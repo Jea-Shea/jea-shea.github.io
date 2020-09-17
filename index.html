@@ -9,14 +9,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jordan Shea's Portfolio</title>
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link ref="text/css" rel="cssStyle" href="/portfolio/index.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="">
         <a class="navbar-brand" id="logo" href="#">
-          <img src="/portfolio/assets/instagram.png" alt="" style="width: 10%;" >
+          <img src="/portfolio/assets/logo.png" alt="" style="width: 5%;" >
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -51,62 +60,92 @@
         </div>
       </nav>
 
-      <div class="jumbotron" style="background-image: url(../portfolio/assets/Pink.jpg); height: 100vh;">
-        <h1 class="display-4">JShea Social, LLC</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <div class="jumbotron" style="background-image: url(../portfolio/assets/plant.jpg); height: 100vh;">
+        <h1 class="display-4" style="font-family: 'Cinzel', serif; color: white; font-size: 10em;">JShea Social, LLC</h1>
+        <div class="text-center" id="arrow"><img src="/portfolio/assets/down-arrow.png" style="width: 45px; margin-top: 25%;"></div>
         <!-- <hr class="my-4"> This is a divider line -->
-        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
         <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> this is a simple button -->
       </div>
 
-      <div class="container" style="height: 100vh;">
-        <h1 class="text-left"><a name="consulting">Consulting & Workshops</a></h1>
+      <div class="container" style="height: 75vh;">
+        <h1 class="text-left" style="font-family: 'Cinzel', serif; margin-top: 2em; margin-bottom: 1em; font-size: 4em;"><a name="consulting">Consulting & Workshops</a></h1>
         <div class="row"></div>
-        <div class="col-md-7"> 
-           <p>This is a test paragraph, but you should be able to see columns at work // dictates size of columns along with screen size before it breaks</p>
+        <div class="col"> 
+           <p style="font-size: 18px;">My workshops and consultations offer the perfect opportunity to learn digital skills that serve you and your business. Offering topics from Facebook ads set-up to multi-platform content strategy, every session is tailored to your business and needs. Prior to meeting, we discuss key topics to cover along with tangibles we can accomplish during our time. 
+<br><br>
+            From this, I develop a curriculum that fits your knowledge level and budget. Whether you hope to establish an ad funnel or build a 6 month content calendar, we will work through these goals together. These are hands on opportunities designed to move you forward.
+            <br><br>
+            Early into my career I discovered a love of sharing knowledge with other entrepreneurs. I enjoy taking the knowledge I’ve earned over the past 5 years to strengthen small businesses across Indiana. 
+            </p>
         </div>
-        <div class="col-md-3"> 
-            <p>This is a test paragraph, but you should be able to see columns at work // dictates size of columns along with screen size before it breaks</p>
-        </div>
+
       </div>
       </div>
       
     <!-- https://mdbootstrap.com/snippets/jquery/ascensus/127193 -->
 
     <div class="container" id="photoGrid" style="height: 100vh;">
-      <h1 class="text-center"><a name="photography">Photography</a></h1> 
+      <h1 class="text-center" style="font-family: 'Cinzel', serif; margin-top: 15px; margin-bottom: 1em; font-size: 4em;"><a name="photography">Photography</a></h1> 
       <div class="row">
         <div class="col-lg-4 col-md-6 mb-4">
-          <img src="/portfolio/assets/RP1.jpg" class="img-fluid mb-4" style="width: 100%;">
-          <img src="/portfolio/assets/RP2.jpg" class="img-fluid mb-4" style="width: 100%;">
+          <div class="view overlay zoom">
+            <img src="/portfolio/assets/RP1.jpg" class="img-fluid mb-4" style="width: 100%;"> <!--https://mdbootstrap.com/docs/jquery/css/hover-effects/#docsTabsOverview effect not working-->
+            <div class="mask flex-center">
+                <p class="white-text" style="font-family: 'Cinzel', serif;">Royal Pin Entertainment</p>
+            </div>
+          </div>
+          <div class="view overlay zoom">
+            <img src="/portfolio/assets/RP2.jpg" class="img-fluid mb-4" style="width: 100%;">
+            <div class="mask flex-center">
+                <p class="white-text" style="font-family: 'Cinzel', serif;">Royal Pin Entertainment</p>
+            </div>
+          </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4">
-          <img src="/portfolio/assets/Elevator2.jpg" class="img-fluid mb-4">
+          <div class="view overlay zoom">
+            <img src="/portfolio/assets/Elevator2.jpg" class="img-fluid mb-4" style="width: 100%;">
+            <div class="mask flex-center">
+                <p class="dark-text" style="font-family: 'Cinzel', serif;">The Elevator Franklin</p>
+            </div>
+          </div>
         </div>
         <div class="col-lg-4 col-md-6 mb-4"> 
-          <img src="/portfolio/assets/Leugers.jpg" class="img-fluid mb-4" style="width: 100%;">
-          <img src="/portfolio/assets/BLM.jpg" class="img-fluid mb-4" style="width: 100%;">
+          <div class="view overlay zoom">
+            <img src="/portfolio/assets/Leugers.jpg" class="img-fluid mb-4" style="width: 100%;">
+            <div class="mask flex-center">
+                <p class="white-text" style="font-family: 'Cinzel', serif;">Leugers Insurance</p>
+            </div>
+          </div>
+          <div class="view overlay zoom">
+            <img src="/portfolio/assets/BLM.jpg" class="img-fluid mb-4" style="width: 100%;">
+            <div class="mask flex-center">
+                <p class="white-text" style="font-family: 'Cinzel', serif;">The Speak Easy</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <p class="text-center" style="font-size: 18px;">My work often requires me to be behind to camera to create social content. Hovering reveals the brand each image was created for.</p>
         </div>
       </div>
     </div>
         
     
 
-    <div class="container" style="height: 100vh;">
-      <h1 class="text-center"><a name="webDev">Web Development</a></h1>
+    <div class="container" style="height: 75vh;">
+      <h1 class="text-center" style="font-family: 'Cinzel', serif; margin-top: 15px; margin-bottom: 1em; font-size: 4em;"><a name="webDev">Web Development</a></h1>
         <div class="row" style="color: ">
             <div class="col">
               <a href="https://codepen.io/pen/?template=eYZJOwd"><img src="/portfolio/assets/Staryu.PNG" alt="..." class="img-thumbnail"></a>
             </div>
             <div class="col">
-              <a href="https://jea-shea.github.io/StaticLayout/"><img src="/portfolio/assets/hulu.PNG" alt="..." class="img-thumbnail"></a>
-              </div>
+              <a href="https://jea-shea.github.io/APIProject1/"><img src="/portfolio/assets/API.PNG" alt="..." class="img-thumbnail"></a>
+            </div>
             <div class="col">
-              <img src="..." alt="..." class="img-thumbnail">
+              <a href="https://jea-shea.github.io/StaticLayout/"><img src="/portfolio/assets/hulu.PNG" alt="..." class="img-thumbnail"></a>
             </div>
          </div>
          <div class="row">
-           <p class="text-center">Cat ipsum dolor sit amet, destroy house in 5 seconds but bite the neighbor's bratty kid bird bird bird bird bird bird human why take bird out i could have eaten that. Fish i must find my red catnip fishy fish stare at imaginary bug throw down all the stuff in the kitchen and relentlessly pursues moth but sniff other cat's butt and hang jaw half open thereafter eat grass, throw it back up or pelt around the house and up and down stairs chasing phantoms. Ask to be pet then attack owners hand stare out cat door then go back inside, curl into a furry donut attack the child. Poop in the plant pot stare at the wall, play with food and get confused by dust and lick the plastic bag run off table persian cat jump eat fish but sleep everywhere, but not in my bed or scream for no reason at 4 am for catto munch salmono. Knock dish off table head butt cant eat out of my own dish human give me attention meow, sit on human yet cats go for world domination so no, you can't close the door, i haven't decided whether or not i wanna go out. Twitch tail in permanent irritation sun bathe, kitty pounce, trip, faceplant you didn't see that no you didn't definitely didn't lick, lick, lick, and preen away the embarrassment so i cry and cry and cry unless you pet me, and then maybe i cry just for fun bite plants. Meow for food, then when human fills food dish, take a few bites of food and continue meowing fight an alligator and win find empty spot in cupboard and sleep all day or fooled again thinking the dog likes me yet destroy house in 5 seconds stick butt in face, and meow meow we are 3 small kittens sleeping most of our time, we are around 15 weeks old i think, i don’t know i can’t count. Scratch me there, elevator butt chase laser or catch eat throw up catch eat throw up bad birds shake treat bag, for i do no work yet get food, shelter, and lots of stuff just like man who lives with us. Oooo! dangly balls! jump swat swing flies so sweetly to the floor crash move on wash belly nap cat jumps and falls onto the couch purrs and wakes up in a new dimension filled with kitty litter meow meow yummy there is a bunch of cats hanging around eating catnip or shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff i just saw other cats inside the house and nobody ask me before using my litter box.
+           <p class="text-center" style="margin-top: 2em; font-size: 18px;">I’ve been managing WordPress websites since college. I am currently training professionally to be capable of web development.
 
 </p>
          </div>
@@ -117,10 +156,15 @@
 
 
 
-    <div class="container" style="height: 100vh;">
-      <h1 class="text-right"><a name="ppc">Pay Per Click</a></h1>
-      <div class="row"> 
-          <p class="text-right">Cat ipsum dolor sit amet, destroy house in 5 seconds but bite the neighbor's bratty kid bird bird bird bird bird bird human why take bird out i could have eaten that. Fish i must find my red catnip fishy fish stare at imaginary bug throw down all the stuff in the kitchen and relentlessly pursues moth but sniff other cat's butt and hang jaw half open thereafter eat grass, throw it back up or pelt around the house and up and down stairs chasing phantoms. Ask to be pet then attack owners hand stare out cat door then go back inside, curl into a furry donut attack the child. Poop in the plant pot stare at the wall, play with food and get confused by dust and lick the plastic bag run off table persian cat jump eat fish but sleep everywhere, but not in my bed or scream for no reason at 4 am for catto munch salmono. Knock dish off table head butt cant eat out of my own dish human give me attention meow, sit on human yet cats go for world domination so no, you can't close the door, i haven't decided whether or not i wanna go out. Twitch tail in permanent irritation sun bathe, kitty pounce, trip, faceplant you didn't see that no you didn't definitely didn't lick, lick, lick, and preen away the embarrassment so i cry and cry and cry unless you pet me, and then maybe i cry just for fun bite plants. Meow for food, then when human fills food dish, take a few bites of food and continue meowing fight an alligator and win find empty spot in cupboard and sleep all day or fooled again thinking the dog likes me yet destroy house in 5 seconds stick butt in face, and meow meow we are 3 small kittens sleeping most of our time, we are around 15 weeks old i think, i don’t know i can’t count. Scratch me there, elevator butt chase laser or catch eat throw up catch eat throw up bad birds shake treat bag, for i do no work yet get food, shelter, and lots of stuff just like man who lives with us. Oooo! dangly balls! jump swat swing flies so sweetly to the floor crash move on wash belly nap cat jumps and falls onto the couch purrs and wakes up in a new dimension filled with kitty litter meow meow yummy there is a bunch of cats hanging around eating catnip or shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff i just saw other cats inside the house and nobody ask me before using my litter box.
+    <div class="container" style="height: 75vh;">
+      <h1 class="text-right" style="font-family: 'Cinzel', serif; margin-top: 15px; margin-bottom: 1em; font-size: 4em;"><a name="ppc">Pay Per Click</a></h1>
+      <div class="col-md-12"> 
+          <p class="text-right" style="font-size: 18px;">Is expanding your audience through paid reach the next step for your business? There are many digital platforms with small business friendly ads, but which one is right for you and for how much.
+<br><br>
+            We’ll sit down and discuss your goals with ads, along with determining a manageable budget. I specialize in making pricier platforms, like Google Ads, more accessible to small businesses by capitalizing on the brand’s strengths.
+            <br><br>
+            Brand awareness funnels, sales promotions and leads are all goals we can accomplish through comprehensive ad strategies!
+            
 
 </p>
       </div>
@@ -128,9 +172,9 @@
     </div>
 
     
-    <div class="container" style="height: 100vh;">
-      <h1 class="text-center"><a name="content">Content Strategy & Management</a></h1>
-      <div class="row">
+    <div class="container" style="height: 75vh;">
+      <h1 class="text-center" style="font-family: 'Cinzel', serif; margin-top: 15px; margin-bottom: 1em; font-size: 4em;"><a name="content">Content Strategy & Management</a></h1>
+      <div class="row" >
         <div class="col-md-3">
           <img src="/portfolio/assets/facebook.png" alt="" style="width: 30%;">
         </div>
@@ -145,27 +189,31 @@
         </div>
       </div>
       <div class="row">
-        <p class="text-center">Cat ipsum dolor sit amet, destroy house in 5 seconds but bite the neighbor's bratty kid bird bird bird bird bird bird human why take bird out i could have eaten that. Fish i must find my red catnip fishy fish stare at imaginary bug throw down all the stuff in the kitchen and relentlessly pursues moth but sniff other cat's butt and hang jaw half open thereafter eat grass, throw it back up or pelt around the house and up and down stairs chasing phantoms. Ask to be pet then attack owners hand stare out cat door then go back inside, curl into a furry donut attack the child. Poop in the plant pot stare at the wall, play with food and get confused by dust and lick the plastic bag run off table persian cat jump eat fish but sleep everywhere, but not in my bed or scream for no reason at 4 am for catto munch salmono. Knock dish off table head butt cant eat out of my own dish human give me attention meow, sit on human yet cats go for world domination so no, you can't close the door, i haven't decided whether or not i wanna go out. Twitch tail in permanent irritation sun bathe, kitty pounce, trip, faceplant you didn't see that no you didn't definitely didn't lick, lick, lick, and preen away the embarrassment so i cry and cry and cry unless you pet me, and then maybe i cry just for fun bite plants. Meow for food, then when human fills food dish, take a few bites of food and continue meowing fight an alligator and win find empty spot in cupboard and sleep all day or fooled again thinking the dog likes me yet destroy house in 5 seconds stick butt in face, and meow meow we are 3 small kittens sleeping most of our time, we are around 15 weeks old i think, i don’t know i can’t count. Scratch me there, elevator butt chase laser or catch eat throw up catch eat throw up bad birds shake treat bag, for i do no work yet get food, shelter, and lots of stuff just like man who lives with us. Oooo! dangly balls! jump swat swing flies so sweetly to the floor crash move on wash belly nap cat jumps and falls onto the couch purrs and wakes up in a new dimension filled with kitty litter meow meow yummy there is a bunch of cats hanging around eating catnip or shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff i just saw other cats inside the house and nobody ask me before using my litter box.
+        <p class="text-center" style="margin-top: 2em; font-size: 18px;">Content management and strategy is the foundation of my business and career. My approach to content is holistic, requiring hands on time and full brand integration. For content to resonate with its audience,
 
 </p>
       </div>
     </div>
 
-    <div class="container" style="height: 75vh;">
-      <h1 class="text-left"><a name="about">About</a></h1>
-      <div class="row"></div>
-      <div class="col-md-7"> 
-         <p>This is a test paragraph, but you should be able to see columns at work // dictates size of columns along with screen size before it breaks</p>
+    <div class="container" style="height: 50vh;">
+      <h1 class="text-left" style="font-family: 'Cinzel', serif; margin-top: 15px; margin-bottom: 1em; font-size: 4em;"><a name="about">About</a></h1>
+      <div class="row">
+        <div class="col-md-7">
+          <p style="font-size: 18px;">I am Jordan Shea, and I am JShea Social, LLC. My business is my ability to serve the small business community of central Indiana.</p>
+<br>
+            <p style="font-size: 18px;">I have been fortunate to have worked in communities across Indiana serving in a variety of capicities, all with the goal of helping the businesses that make our economy thrive.
+          </p>
+        </div>
+      <div class="col-md"> 
+        <img src="/portfolio/assets/DSC01997.jpg" class="rounded" style="width: 450px" alt="">
       </div>
-      <div class="col-md-3"> 
-          <p>This is a test paragraph, but you should be able to see columns at work // dictates size of columns along with screen size before it breaks</p>
-      </div>
+
     </div>
     </div>
 
     
 <!-- Footer -->
-<footer class="page-footer font-small blue pt-4" style="background-color: teal; color: white">
+<footer class="page-footer font-small pt-4" style="background-color: teal; color: white">
 
 <div class="container">
 
@@ -181,7 +229,7 @@
       <div class="col-md-5 mt-md-0 mt-3">
 
         <!-- Content -->
-        <h5 class="text-uppercase">Contact</h5>
+        <h5 class="text-uppercase" style="font-family: 'Cinzel', serif;">Contact</h5>
         <form
   action="https://formspree.io/mdowrvyn"
   method="POST"
@@ -202,7 +250,7 @@
     <textarea name="message"></textarea>
   </label>
 <br>
-  <button type="submit">Send</button>
+  <button type="submit" style="font-family: 'Cinzel', serif;">Send</button>
 </form>
       </div>
       <!-- Grid column -->
@@ -213,9 +261,9 @@
       <div class="col-md-3 mb-md-0 mb-3">
 
         <!-- Links -->
-        <h5 class="text-uppercase">Resume</h5>
+        <h5 class="text-uppercase" style="font-family: 'Cinzel', serif;">Resume</h5>
 
-<button>Download Resume</button>
+<button style="font-family: 'Cinzel', serif;">Download Resume</button>
 
       </div>
       <!-- Grid column -->
@@ -228,55 +276,13 @@
   <!-- Footer Links -->
 </div>
 
+  <br>
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3"> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+  <div class="footer-copyright text-center py-3"> Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>  and <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></div>
+  
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
     <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
   </div>
   <!-- Copyright -->
 
 </footer>
-<!-- Footer -->
-
-        <!-- <div class="row">
-            <div class="col-md">
-                <p>// sizing lets you know if you're opting in or out of bootstrap grid based on screen size</p>
-            </div>
-            <div class="col-md">
-                <p>This is a test paragraph, but you should be able to see columns at work</p>
-            </div>
-            <div class="col-md">
-                <p>This is a test paragraph, but you should be able to see columns at work</p>
-            </div>
-        </div>
-        <div class="row" style="color: green">
-            <div class="col-7"> 
-                <p>This is a test paragraph, but you should be able to see columns at work // sizing lets you know if you're opting in or out of bootstrap grid based on screen size. This is seven spaces wide - boostrap does them 12 spaces wide per row</p>
-            </div>
-            <div class="col-5"> 
-                <p>This is a test paragraph, but you should be able to see columns at work // sizing lets you know if you're opting in or out of bootstrap grid based on screen size. This is seven spaces wide - boostrap does them 12 spaces wide per row</p>
-            </div>
-            <div class="col-5"> 
-                <p>This is a test paragraph, but you should be able to see columns at work // sizing lets you know if you're opting in or out of bootstrap grid based on screen size. This is seven spaces wide - boostrap does them 12 spaces wide per row</p>
-            </div>
-        </div>
-        <div class="row" style="color: orange">
-            <div class="col-md-3"> 
-                <p>This is a test paragraph, but you should be able to see columns at work // dictates size of columns along with screen size before it breaks</p>
-            </div>
-            <div class="col-md-3"> 
-                <p>This is a test paragraph, but you should be able to see columns at work // dictates size of columns along with screen size before it breaks</p>
-            </div>
-            <div class="col-md-3"> 
-                <p>This is a test paragraph, but you should be able to see columns at work // dictates size of columns along with screen size before it breaks</p>
-            </div>
-            <div class="col-md-3"> 
-                <p>This is a test paragraph, but you should be able to see columns at work // dictates size of columns along with screen size before it breaks</p>
-            </div>
-        </div>
-    </div>
-</body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-</html> 
