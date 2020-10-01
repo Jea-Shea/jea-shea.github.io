@@ -18,7 +18,7 @@
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link ref="text/css" rel="cssStyle" href="/portfolio/index.css" />
+    <link ref="text/css" rel="stylesheet" href="index.css" />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
 
 </head>
@@ -39,7 +39,7 @@
               <a class="nav-link" href="#consulting">Consulting</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#photography">Photography</a>
+              <a class="nav-link" href="#photoGrid">Photography</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#webDev" style="text-align: center;">Web Development</a>
@@ -62,13 +62,13 @@
 
       <div class="jumbotron" style="background-image: url(../portfolio/assets/plant.jpg); height: 100vh;">
         <h1 class="display-4" style="font-family: 'Cinzel', serif; color: white; font-size: 10em;">JShea Social, LLC</h1>
-        <div class="text-center" id="arrow" style="animation: float;"><img  src="/portfolio/assets/down-arrow.png" style="width: 45px; margin-top: 25%;" ></div> <!--https://mdbootstrap.com/docs/jquery/css/animations/-->  
+        <div class="text-center" id="arrow" style="animation: float;"><a class="nav-link" href="#consulting"><img  src="/portfolio/assets/down-arrow.png" style="width: 45px; margin-top: 25%;" ></a></div> <!--https://mdbootstrap.com/docs/jquery/css/animations/-->  
         <!-- <hr class="my-4"> This is a divider line -->
         <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> this is a simple button -->
       </div>
 
       <section id="consulting">
-        <div class="container" >
+        <div class="container" style="height: 75vh;" >
           <h1 class="text-left" style="font-family: 'Cinzel', serif; margin-top: 2em; margin-bottom: 1em; font-size: 4em;" >Consulting & Workshops</h1>
           <div class="row"></div>
           <div class="col"> 
@@ -79,7 +79,6 @@
               Early into my career I discovered a love of sharing knowledge with other entrepreneurs. I enjoy taking the knowledge I’ve earned over the past 5 years to strengthen small businesses across Indiana. 
               </p>
           </div>
-  
         </div>
       </section>
 
@@ -147,7 +146,7 @@
             </div>
          </div>
          <div class="row">
-           <p class="text-center" style="margin-top: 2em; font-size: 18px;">I’ve been managing WordPress websites since college starting with Spoon University's Indiana University Chapter. From there, I became responsible for a website at my first job. I have managed websites for the majority of my clients as it goes hand in hand with social content strategies and SEO. I am currently training professionally to be capable of web development.
+           <p class="text-center" style="margin-top: 2em; font-size: 18px;">I’ve been managing WordPress websites since college starting with Spoon University's Indiana University Chapter. From there, I became responsible for a website at my first job. I have managed websites for the majority of my clients as it goes hand in hand with social content strategies and SEO. I am currently training professionally to be capable of web development. You can find more of my work on my <a href="https://github.com/Jea-Shea">GitHub</a> and <a href="https://codepen.io/jea-shea">Codepen</a>.
 
 </p>
          </div>
@@ -199,16 +198,18 @@
 
     <div class="container" style="height: 50vh;">
       <h1 class="text-left" style="font-family: 'Cinzel', serif; margin-top: 15px; margin-bottom: 1em; font-size: 4em; scroll-behavior: smooth;"><a id="about">About</a></h1>
+    
       <div class="row">
+        <div class="col-md-3"> 
+          <img src="/portfolio/assets/TIS (32 of 179).jpg" class="rounded" style="height: 300px; margin-bottom: 10px;" alt="">
+        </div>
         <div class="col-md-7">
           <p style="font-size: 18px;">I am Jordan Shea, and I am JShea Social, LLC. My business is my ability to serve the small business community of central Indiana.</p>
 <br>
             <p style="font-size: 18px;">I have been fortunate to have worked in communities across Indiana serving in a variety of capicities, all with the goal of helping the businesses that make our economy thrive.
           </p>
         </div>
-      <div class="col-md"> 
-        <img src="/portfolio/assets/DSC01997.jpg" class="rounded" style="width: 450px" alt="">
-      </div>
+
 
     </div>
     </div>
@@ -239,17 +240,17 @@
     <label>
     Your name:
     <br>
-    <input type="text" name="name">
+    <input type="text" name="name" style='border-radius: 5px; border: none;'>
   </label>
   <label>
     Your email:
     <br>
-    <input type="text" name="_replyto">
+    <input type="text" name="_replyto" style='border-radius: 5px; border: none;'>
   </label>
   <label>
     Your message:
     <br>
-    <textarea name="message"></textarea>
+    <textarea name="message" style='border-radius: 5px; border: none;'></textarea>
   </label>
 <br>
   <button type="submit" style="font-family: 'Cinzel', serif;">Send</button>
@@ -265,7 +266,7 @@
         <!-- Links -->
         <h5 class="text-uppercase" style="font-family: 'Cinzel', serif;">Resume</h5>
 
-<button style="font-family: 'Cinzel', serif;">Download Resume</button>
+<button style="font-family: 'Cinzel', serif; "> <a style="color: darkslategrey;" href="https://documentcloud.adobe.com/link/track?uri=urn:aaid:scds:US:774a9c22-7ff8-49a8-bc11-9d6780d72863">Resume</a></button>
 
       </div>
       <!-- Grid column -->

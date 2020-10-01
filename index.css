@@ -6,6 +6,11 @@ html {
     margin-left: auto;
 }
 
+button {
+	border-radius: 5px;
+	border: none;
+}
+
 
 #arrow {
 	transform: translatey(0px);
